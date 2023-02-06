@@ -1,0 +1,8 @@
+#pic{
+    flex-direction: column;
+}
+#intro h2 p{
+    /* display: flex; */
+    flex-direction: column;
+    text-align: justify;
+}
