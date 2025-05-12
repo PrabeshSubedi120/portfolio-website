@@ -4,92 +4,236 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal_Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My-Portfolio</title>
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="header">
-        <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About Me</a></li>
-          <li><a href="Portfolio.html">Portfolio</a></li>
-          <li><a href="Contact.html">Contact Me</a></li>
-        </ul>
+    <header>
+      <nav class="contanier">
+        <a href="#home"><img class="logo" src="img/9.png" alt="" /></a>
+        <i id="btn-menu" class="fa-solid fa-bars"></i>
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contact">Contact</a>
+        </div>
       </nav>
-    </section>
-    <section id="home">
-      <div class="main">
-        <h1 class="heading">I AM <br />PRABESH SUBEDI</h1>
-        <a href="Contact.html"><button class="btn">Let's Talk</button></a>
-      </div>
-    </section>
-    <section id="about">
-      <h1 class="heading">ABOUT ME</h1>
-      <div class="content">
-        <div id="pic">
-          <img src="image/p.jpg" alt="pic" />
+    </header>
+    <!-- start home sec -->
+    <div class="hero" id="home">
+      <div class="contanier">
+        <div class="content">
+          <h4>Hello, I'm</h4>
+          <h1>Prabesh Subedi</h1>
+          <p>IT Student</p>
+          <a href="#" class="btn">Let's Talk</a>
         </div>
-        <div id="intro">
-          <h2> I AM PRABESH SUBEDI</h2>
+
+        <div class="hero-img">
+          <img src="img/12.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- start about sec -->
+
+    <section id="about" class="about">
+      <div class="contanier">
+        <div class="about-img">
+          <img src="img/8.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>About <span>Me</span></h1>
+          <h3>Front-End Developer</h3>
           <p>
-            I live in Pokhara city. I am 20 years old and i am studying at Gandaki University.
-             I am the student from BIT. I love to do coding. 
-             My hobbies are Riding a motorcycle, driving, listening music.            
+            I am a highly motivated IT student at Gandaki University with a
+            strong enthusiasm for designing, SEO, data science, and
+            cybersecurity. My academic journey and hands-on experience have
+            equipped me with both the technical skills and creative mindset
+            required to build impactful digital solutions. I have successfully
+            completed several projects, including:<br />
+            • Developing responsive websites using HTML, CSS, JavaScript, and
+            PHP<br />
+            • Building full-stack applications with Python and Django<br />
+            • Working on IoT-based projects that bridge hardware with software
+            for smart automation<br />
+
+            My passion for learning extends into areas like UI/UX design,
+            DevOps, and Data Science, and I constantly seek opportunities to
+            broaden my skill set through real-world applications and
+            collaborative projects. I’m currently open to internships, tech
+            collaborations, and mentorship opportunities where I can contribute,
+            learn, and grow in the field of technology.
           </p>
+          <div class="btns">
+            <a href="#" class="btn">Download CV</a>
+            <a href="#" class="btn">Contact Me</a>
+          </div>
         </div>
       </div>
     </section>
-    <section id="portfolio">
-        <h1 class="heading">Portfolio</h1>
-        <div class="gallery">
-            <img src="image/j.jpg" alt="Pic">
-            <img src="image/n.jpg" alt="Pic">
-            <img src="image/s.jpg" alt="Pic">
+
+    <!-- start Services -->
+
+    <section id="services" class="services">
+      <div class="contanier">
+        <div class="sec-top">
+          <h1>My <span>Services</span></h1>
         </div>
+
+        <div class="boxs">
+          <div class="box">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              UI/UX design refers to the process of designing user interfaces
+              and experiences for digital products, such as websites, mobile
+              apps, and software applications. UI stands for User Interface,
+              which focuses on the visual elements of a design, while UX stands
+              for User Experience.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="box">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Search Engine Optimization</h3>
+            <p>
+              Enhance your website traffic, improve Google rankings, and grow
+              your business with powerful SEO techniques. From keyword research
+              to on-page optimization and link building, we offer tailored
+              solutions to drive real results. Start ranking higher today!
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Freelancing</h3>
+            <p>
+              Freelancing is doing specific work for clients without committing
+              to full-time employment. Freelancers often take on multiple
+              projects with different clients simultaneously. The Internal
+              Revenue Service (IRS) considers freelancers to be self-employed
+              individuals.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="contact-form">
-        <h1 class="heading">Contact Me</h1>
-        <form action="" id="contact-form">
-          <h2>Get in touch</h2>
-          <div class="input-box">
-            <input type="text" required="true">
-            <span>Full Name</span>
-          </div>
-          
-          <div class="input-box">
-            <input type="email" required="true">
-            <span>Email</span>
-          </div>
-          
-          <div class="input-box">
-            <textarea required="true"></textarea>
-            <span>Type your Message...</span>
-          </div>
-          
-          <div class="input-box">
-            <input type="submit" value="Send">
-          </div>
-        </form>
-        <div class="contact-info">
-          <p><i class="fa-solid fa-mobile"></i> 9827118827</p>
-          <p><i class="fa-solid fa-envelope"></i>Prabeshbhai120@gmail.com</p>
-          <p><i class="fa-solid fa-location-dot"></i>Pokhara, Nepal</p>
+
+    <!-- start Portfolio -->
+
+    <section id="Portfolio" class="portfolio">
+      <div class="contanier">
+        <div class="sec-top">
+          <h1>My <span>Gallery</span></h1>
         </div>
-        </section>
-        <section id="footer">
-            <div class="footer-content">
-                <span>Copyright &copy;2023 Prabesh</span>
+
+        <div class="boxs">
+          <div class="box">
+            <div class="box-hover">
+              <span
+                >Kanxi barah temple <br />
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLumle
+              </span>
             </div>
-            <ul class="social-icon">
-                    <li><a href="https://www.facebook.com/profile.php?id=100008645714360" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/prabesh_subedi_/"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.gmail.com/"target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/PrabeshSubedi120"target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                </ul>
-        </section>
+            <img src="img/1.jpg" alt="" />
+          </div>
+
+          <div class="box">
+            <div class="box-hover">
+              <span>Night view of lakeside</span>
+            </div>
+            <img src="img/2.jpg" alt="" />
+          </div>
+
+          <div class="box">
+            <div class="box-hover">
+              <span>way to jaljala stream</span>
+            </div>
+            <img src="img/3.jpg" alt="" />
+          </div>
+
+          <div class="box">
+            <div class="box-hover">
+              <span>Davi's Fall</span>
+            </div>
+            <img src="img/4.jpg" alt="" />
+          </div>
+
+          <div class="box">
+            <div class="box-hover">
+              <span>View from Kaskikot</span>
+            </div>
+            <img src="img/5.jpg" alt="" />
+          </div>
+
+          <div class="box">
+            <div class="box-hover">
+              <span>Kaski, Naudada</span>
+            </div>
+            <img src="img/6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start Contact -->
+
+    <section id="Contact" class="contact">
+      <div class="contanier">
+        <div class="sec-top">
+          <h1>Contact <span>Me</span></h1>
+        </div>
+
+        <form action="">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="number" placeholder="Phone Number" />
+          <input type="email" placeholder="Email Address" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <button class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Prabesh Subedi. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://github.com/PrabeshSubedi120" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/prabesh-subedi-728465285/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:your@email.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
