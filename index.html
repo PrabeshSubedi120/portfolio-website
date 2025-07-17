@@ -1,239 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My-Portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prabesh Subedi - Portfolio</title>
 
-    <!-- link file css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="contanier">
-        <a href="#home"><img class="logo" src="img/9.png" alt="" /></a>
-        <i id="btn-menu" class="fa-solid fa-bars"></i>
-        <div class="nav-links">
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#Portfolio">Portfolio</a>
-          <a href="#Contact">Contact</a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- link file css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cursor follower -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <a href="#home" class="brand-link"><span class="brand-text">P.S</span></a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-greeting">
+            <span class="greeting-text">Hello, I'm</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Prabesh</span>
+            <span class="title-line">Subedi</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span class="subtitle-text">Full-Stack Developer</span>
+            <span class="subtitle-accent">& IT Student</span>
+          </div>
+          <p class="hero-description">
+            Crafting digital experiences with modern technologies and creative solutions
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="#portfolio" class="btn btn-secondary">View Work</a>
+          </div>
         </div>
-      </nav>
-    </header>
-    <!-- start home sec -->
-    <div class="hero" id="home">
-      <div class="contanier">
-        <div class="content">
-          <h4>Hello, I'm</h4>
-          <h1>Prabesh Subedi</h1>
-          <p>IT Student</p>
-          <a href="#" class="btn">Let's Talk</a>
-        </div>
-
-        <div class="hero-img">
-          <img src="img/12.png" alt="" />
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="image-backdrop"></div>
+            <img src="img/12.png" alt="Prabesh Subedi" class="hero-image" />
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- start about sec -->
-
-    <section id="about" class="about">
-      <div class="contanier">
-        <div class="about-img">
-          <img src="img/8.jpg" alt="" />
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-visual">
+          <div class="about-image-container">
+            <div class="about-image-frame">
+              <img src="img/ghibli.png" alt="Ghibli-style tech illustration" class="about-image" />
+            </div>
+            <div class="about-caption" style="text-align:center;margin-top:0.5rem;font-style:italic;color:#6366f1;">Always learning. Always building.</div>
+            <div class="about-decoration">
+              <div class="decoration-circle"></div>
+              <div class="decoration-dots"></div>
+            </div>
+          </div>
         </div>
-        <div class="content">
-          <h1>About <span>Me</span></h1>
-          <h3>Front-End Developer</h3>
-          <p>
-            I am a highly motivated IT student at Gandaki University with a
-            strong enthusiasm for designing, SEO, data science, and
-            cybersecurity. My academic journey and hands-on experience have
-            equipped me with both the technical skills and creative mindset
-            required to build impactful digital solutions. I have successfully
-            completed several projects, including:<br />
-            • Developing responsive websites using HTML, CSS, JavaScript, and
-            PHP<br />
-            • Building full-stack applications with Python and Django<br />
-            • Working on IoT-based projects that bridge hardware with software
-            for smart automation<br />
+        <div class="about-text">
+          <div class="section-header">
+            <span class="section-subtitle">Get to know me</span>
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+          </div>
+          <div class="about-description">
+            <p class="about-intro">
+              I'm a passionate IT student at Gandaki University with a deep love for creating
+              digital solutions that make a difference.
+            </p>
+            <p class="about-details">
+              My journey spans across multiple domains including web development, Python programming, Django framework,<span id="about-ellipsis">...</span><span id="about-more" style="display:none;"> frontend technologies, backend development, database management, DevOps practices, ERPNext customization,
+              and automation scripting. I specialize in building responsive, user-centric applications using modern
+              technologies like HTML5, CSS3, JavaScript, Python, Django, SQL databases, and cloud deployment strategies.</span>
+              <a href="#" id="about-readmore-link" style="color: var(--primary-color); text-decoration: underline; margin-left: 0.5rem; cursor: pointer;">Read More</a>
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>Full-Stack Development</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>Databases</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-sync-alt"></i>
+              <span>DevOps</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="img/cv.pdf" class="btn btn-primary" download>Download CV</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            My passion for learning extends into areas like UI/UX design,
-            DevOps, and Data Science, and I constantly seek opportunities to
-            broaden my skill set through real-world applications and
-            collaborative projects. I’m currently open to internships, tech
-            collaborations, and mentorship opportunities where I can contribute,
-            learn, and grow in the field of technology.
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">What I offer</span>
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-description">
+            Creating intuitive and visually appealing user interfaces that enhance user experience
+            and drive engagement across digital platforms.
           </p>
-          <div class="btns">
-            <a href="#" class="btn">Download CV</a>
-            <a href="#" class="btn">Contact Me</a>
+          <div class="service-features">
+            <span class="feature">Wireframing</span>
+            <span class="feature">Prototyping</span>
+            <span class="feature">User Research</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3 class="service-title">SEO Optimization</h3>
+          <p class="service-description">
+            Boosting your online visibility with strategic SEO techniques, keyword optimization,
+            and performance improvements to rank higher on search engines.
+          </p>
+          <div class="service-features">
+            <span class="feature">Keyword Research</span>
+            <span class="feature">On-page SEO</span>
+            <span class="feature">Analytics</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">
+            Building responsive, fast, and scalable web applications using modern frameworks
+            and best practices for optimal performance.
+          </p>
+          <div class="service-features">
+            <span class="feature">Frontend</span>
+            <span class="feature">Backend</span>
+            <span class="feature">Full-Stack</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- start Services -->
-
-    <section id="services" class="services">
-      <div class="contanier">
-        <div class="sec-top">
-          <h1>My <span>Services</span></h1>
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My work</span>
+        <h2 class="section-title">Featured <span class="accent">Images</span></h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/1.jpg" alt="Kanxi Barah Temple" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Kanxi Barah Temple</h3>
+                <p>Photography Project - Lumle</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="Kanxi Barah Temple" data-image="img/1.jpg"><i
+                      class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/1.jpg" data-title="Kanxi Barah Temple"
+                    data-description="Photography Project - Lumle"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="boxs">
-          <div class="box">
-            <i class="fa-solid fa-pen-ruler"></i>
-            <h3>UI/UX Design</h3>
-            <p>
-              UI/UX design refers to the process of designing user interfaces
-              and experiences for digital products, such as websites, mobile
-              apps, and software applications. UI stands for User Interface,
-              which focuses on the visual elements of a design, while UX stands
-              for User Experience.
-            </p>
-
-            <a href="#" class="btn">Read More</a>
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/2.jpg" alt="Lakeside Night View" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Lakeside Night View</h3>
+                <p>Urban Photography</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="Lakeside Night View"
+                    data-image="img/2.jpg"><i class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/2.jpg" data-title="Lakeside Night View"
+                    data-description="Urban Photography"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="box">
-            <i class="fa-solid fa-rocket"></i>
-            <h3>Search Engine Optimization</h3>
-            <p>
-              Enhance your website traffic, improve Google rankings, and grow
-              your business with powerful SEO techniques. From keyword research
-              to on-page optimization and link building, we offer tailored
-              solutions to drive real results. Start ranking higher today!
-            </p>
-
-            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/3.jpg" alt="Jaljala Stream" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Jaljala Stream</h3>
+                <p>Nature Photography</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="Jaljala Stream" data-image="img/3.jpg"><i
+                      class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/3.jpg" data-title="Jaljala Stream"
+                    data-description="Nature Photography"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Freelancing</h3>
-            <p>
-              Freelancing is doing specific work for clients without committing
-              to full-time employment. Freelancers often take on multiple
-              projects with different clients simultaneously. The Internal
-              Revenue Service (IRS) considers freelancers to be self-employed
-              individuals.
-            </p>
-
-            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/4.jpg" alt="Davi's Fall" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Davi's Fall</h3>
+                <p>Landscape Photography</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="Davi's Fall" data-image="img/4.jpg"><i
+                      class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/4.jpg" data-title="Davi's Fall"
+                    data-description="Landscape Photography"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/5.jpg" alt="Kaskikot View" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>View from Kaskikot</h3>
+                <p>Mountain Photography</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="View from Kaskikot" data-image="img/5.jpg"><i
+                      class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/5.jpg" data-title="View from Kaskikot"
+                    data-description="Mountain Photography"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/6.jpg" alt="Kaski Naudada" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h3>Kaski, Naudada</h3>
+                <p>Rural Photography</p>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link share-btn" data-title="Kaski, Naudada" data-image="img/6.jpg"><i
+                      class="fas fa-share-alt"></i></a>
+                  <a href="#" class="portfolio-link view-btn" data-image="img/6.jpg" data-title="Kaski, Naudada"
+                    data-description="Rural Photography"><i class="fas fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- start Portfolio -->
-
-    <section id="Portfolio" class="portfolio">
-      <div class="contanier">
-        <div class="sec-top">
-          <h1>My <span>Gallery</span></h1>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="section-header">
+            <span class="section-subtitle">Get in touch</span>
+            <h2 class="section-title">Let's Work <span class="accent">Together</span></h2>
+          </div>
+          <p class="contact-description">
+            Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>prabeshbhai120@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+977 9827118827</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Pokhara, Nepal</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="boxs">
-          <div class="box">
-            <div class="box-hover">
-              <span
-                >Kanxi barah temple <br />
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLumle
-              </span>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
             </div>
-            <img src="img/1.jpg" alt="" />
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-text">P.S</span>
+          <p>Creating digital experiences that inspire and engage.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
           </div>
-
-          <div class="box">
-            <div class="box-hover">
-              <span>Night view of lakeside</span>
-            </div>
-            <img src="img/2.jpg" alt="" />
-          </div>
-
-          <div class="box">
-            <div class="box-hover">
-              <span>way to jaljala stream</span>
-            </div>
-            <img src="img/3.jpg" alt="" />
-          </div>
-
-          <div class="box">
-            <div class="box-hover">
-              <span>Davi's Fall</span>
-            </div>
-            <img src="img/4.jpg" alt="" />
-          </div>
-
-          <div class="box">
-            <div class="box-hover">
-              <span>View from Kaskikot</span>
-            </div>
-            <img src="img/5.jpg" alt="" />
-          </div>
-
-          <div class="box">
-            <div class="box-hover">
-              <span>Kaski, Naudada</span>
-            </div>
-            <img src="img/6.jpg" alt="" />
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <a href="https://github.com/PrabeshSubedi120" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/prabesh-subedi-728465285/" target="_blank">LinkedIn</a>
+            <a href="mailto:[email]@example.com">Email</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- start Contact -->
-
-    <section id="Contact" class="contact">
-      <div class="contanier">
-        <div class="sec-top">
-          <h1>Contact <span>Me</span></h1>
-        </div>
-
-        <form action="">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="number" placeholder="Phone Number" />
-          <input type="email" placeholder="Email Address" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-          ></textarea>
-          <button class="btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
+      <div class="footer-bottom">
         <p>&copy; 2025 Prabesh Subedi. All rights reserved.</p>
-        <div class="social-icons">
-          <a href="https://github.com/PrabeshSubedi120" target="_blank"
-            >GitHub</a
-          >
-          <a
-            href="https://www.linkedin.com/in/prabesh-subedi-728465285/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <a href="mailto:your@email.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        <div class="lightbox-info">
+          <h3 class="lightbox-title" id="lightbox-title"></h3>
+          <p class="lightbox-description" id="lightbox-description"></p>
         </div>
       </div>
-    </footer>
+      <div class="lightbox-controls">
+        <button class="lightbox-btn" id="lightbox-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-btn" id="lightbox-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
+  <!-- Share Modal -->
+  <div class="share-modal" id="share-modal">
+    <div class="share-overlay">
+      <div class="share-container">
+        <button class="share-close" id="share-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="share-content">
+          <h3 class="share-title">Share this image</h3>
+          <div class="share-options">
+            <a href="#" class="share-option" id="share-facebook">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="share-option" id="share-twitter">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a href="#" class="share-option" id="share-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="share-option" id="share-whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a href="#" class="share-option" id="share-telegram">
+              <i class="fab fa-telegram-plane"></i>
+              <span>Telegram</span>
+            </a>
+            <button class="share-option" id="copy-link">
+              <i class="fas fa-link"></i>
+              <span>Copy Link</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('about-readmore-link');
+  var more = document.getElementById('about-more');
+  var ellipsis = document.getElementById('about-ellipsis');
+  var expanded = false;
+  if (link && more && ellipsis) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      expanded = !expanded;
+      more.style.display = expanded ? 'inline' : 'none';
+      ellipsis.style.display = expanded ? 'none' : 'inline';
+      link.textContent = expanded ? 'Read Less' : 'Read More';
+    });
+  }
+});
+</script>
+</body>
+
 </html>
