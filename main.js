@@ -114,33 +114,34 @@ animateElements.forEach(element => {
 });
 
 // Form submission
-const contactForm = document.querySelector('.contact-form');
-contactForm?.addEventListener('submit', (e) => {
-  e.preventDefault();
+// REMOVE the following block to allow Formspree to work:
+// const contactForm = document.querySelector('.contact-form');
+// contactForm?.addEventListener('submit', (e) => {
+//   e.preventDefault();
   
-  // Get form data
-  const formData = new FormData(contactForm);
-  const formObject = {};
-  formData.forEach((value, key) => {
-    formObject[key] = value;
-  });
+//   // Get form data
+//   const formData = new FormData(contactForm);
+//   const formObject = {};
+//   formData.forEach((value, key) => {
+//     formObject[key] = value;
+//   });
   
-  // Simulate form submission
-  const submitButton = contactForm.querySelector('button[type="submit"]');
-  const originalText = submitButton.textContent;
+//   // Simulate form submission
+//   const submitButton = contactForm.querySelector('button[type="submit"]');
+//   const originalText = submitButton.textContent;
   
-  submitButton.textContent = 'Sending...';
-  submitButton.disabled = true;
+//   submitButton.textContent = 'Sending...';
+//   submitButton.disabled = true;
   
-  setTimeout(() => {
-    submitButton.textContent = 'Message Sent!';
-    setTimeout(() => {
-      submitButton.textContent = originalText;
-      submitButton.disabled = false;
-      contactForm.reset();
-    }, 2000);
-  }, 1500);
-});
+//   setTimeout(() => {
+//     submitButton.textContent = 'Message Sent!';
+//     setTimeout(() => {
+//       submitButton.textContent = originalText;
+//       submitButton.disabled = false;
+//       contactForm.reset();
+//     }, 2000);
+//   }, 1500);
+// });
 
 // Typing animation for hero subtitle
 const typeWriter = (element, text, speed = 100) => {

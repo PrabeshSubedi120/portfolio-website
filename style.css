@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
   .about-image {
-    height: 150px;
+    height: 250px;
   }
 }
 
@@ -931,6 +931,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero {
     padding-top: 6rem;
+  }
+  .about-image {
+    height: 250px;
   }
 }
 
